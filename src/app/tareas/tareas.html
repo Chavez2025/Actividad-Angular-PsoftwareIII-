@@ -1,0 +1,14 @@
+<div class="tareas-container">
+  <h2>📝 Lista de Tareas</h2>
+
+  <ul>
+    <li *ngFor="let t of tareas">
+      <span>{{ t.nombre }}</span>
+      <button (click)="eliminar(t.id)">❌</button>
+    </li>
+  </ul>
+
+  <p *ngIf="tareas.length === 0" class="no-tareas">
+    ✅ No hay tareas pendientes.
+  </p>
+</div>
