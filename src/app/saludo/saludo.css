@@ -1,0 +1,57 @@
+.saludo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  background: linear-gradient(145deg, #141414, #0f0f0f);
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0, 119, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.saludo-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 119, 255, 0.25);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 119, 255, 0.3);
+}
+
+.input-group input {
+  width: 80%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #1c1c1c;
+  color: #fff;
+  border: 1px solid #2e2e2e;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  background: #222;
+}
+
+.mensaje {
+  font-size: 1.3rem;
+  color: #a8d0ff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

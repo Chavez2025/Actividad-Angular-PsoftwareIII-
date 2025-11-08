@@ -1,0 +1,57 @@
+/* Fondo oscuro con texto claro */
+.inicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  color: #f2f2f2;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+/* Contenedor principal centrado */
+.inicio-content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(0, 120, 255, 0.3);
+}
+
+/* Secciones internas */
+.inicio-section {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #2e2e2e;
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.inicio-section:hover {
+  background-color: #202020;
+  transform: translateY(-5px);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

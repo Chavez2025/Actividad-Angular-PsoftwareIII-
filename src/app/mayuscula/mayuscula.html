@@ -1,0 +1,11 @@
+
+
+
+
+<div class="pipe-container">
+  <div class="pipe-content">
+    <h1>Transformar texto con Pipe personalizado</h1>
+    <input [(ngModel)]="texto" placeholder="Escribe algo..." />
+    <p *ngIf="texto">Resultado: {{ texto | primeraMayuscula }}</p>
+  </div>
+</div>
